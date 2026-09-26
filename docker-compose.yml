@@ -1,0 +1,37 @@
+# Sobe a aplicação completa: API (pace-certo-api) + interface (pace-certo-front).
+# Os dois repositórios devem estar clonados lado a lado:
+#   pasta-qualquer/
+#   ├── pace-certo-api/
+#   └── pace-certo-front/   <- execute "docker compose up --build" aqui
+#
+# Alternativa sem clonar a API: troque "build: ../pace-certo-api" por
+#   build: https://github.com/Ptmarinho/pace-certo-api.git#main
+
+services:
+  api:
+    build: ../pace-certo-api
+    container_name: pace-certo-api
+    ports:
+      - "8000:8000"
+    environment:
+      SEED_DEMO: "true"
+      CORS_ORIGINS: "http://localhost:3000,http://localhost:5173"
+    volumes:
+      - pace-certo-dados:/app/data
+    restart: unless-stopped
+
+  front:
+    build:
+      context: .
+      args:
+        VITE_API_URL: http://localhost:8000
+    container_name: pace-certo-front
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pace-certo-dados:

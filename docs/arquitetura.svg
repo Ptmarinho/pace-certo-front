@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" width="1040" height="560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#37474f"/>
+    </marker>
+  </defs>
+
+  <rect width="1040" height="560" fill="#ffffff"/>
+
+  <text x="520" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#263238">Pace Certo — Arquitetura da aplicação</text>
+  <text x="520" y="64" text-anchor="middle" font-size="14" fill="#607d8b">Componentes autônomos em containers, comunicando-se via REST/JSON</text>
+
+  <!-- docker compose -->
+  <rect x="200" y="96" width="600" height="420" rx="16" fill="#f5f9ff" stroke="#1e88e5" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="220" y="122" font-size="14" font-weight="600" fill="#1e88e5">docker-compose.yml (na raiz do repositório pace-certo-front)</text>
+
+  <!-- usuário -->
+  <rect x="24" y="210" width="140" height="96" rx="12" fill="#eceff1" stroke="#607d8b" stroke-width="2"/>
+  <text x="94" y="248" text-anchor="middle" font-size="16" font-weight="700" fill="#263238">Usuário</text>
+  <text x="94" y="270" text-anchor="middle" font-size="13" fill="#455a64">navegador</text>
+  <text x="94" y="288" text-anchor="middle" font-size="13" fill="#455a64">localhost:3000</text>
+
+  <!-- front -->
+  <rect x="230" y="160" width="220" height="196" rx="12" fill="#fff3e0" stroke="#ff5722" stroke-width="2"/>
+  <text x="340" y="188" text-anchor="middle" font-size="16" font-weight="700" fill="#bf360c">Front-end</text>
+  <text x="340" y="208" text-anchor="middle" font-size="13" fill="#6d4c41">repositório pace-certo-front</text>
+  <text x="340" y="236" text-anchor="middle" font-size="13" fill="#3e2723">React + Vite</text>
+  <text x="340" y="256" text-anchor="middle" font-size="13" fill="#3e2723">Material UI + Recharts</text>
+  <text x="340" y="276" text-anchor="middle" font-size="13" fill="#3e2723">Dashboard · Treinos</text>
+  <text x="340" y="296" text-anchor="middle" font-size="13" fill="#3e2723">Planejar · Locais</text>
+  <text x="340" y="330" text-anchor="middle" font-size="12" fill="#6d4c41">container nginx · porta 3000</text>
+
+  <!-- api -->
+  <rect x="560" y="160" width="220" height="196" rx="12" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="670" y="188" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">API Pace Certo</text>
+  <text x="670" y="208" text-anchor="middle" font-size="13" fill="#2e7d32">repositório pace-certo-api</text>
+  <text x="670" y="236" text-anchor="middle" font-size="13" fill="#1b5e20">Python + FastAPI</text>
+  <text x="670" y="256" text-anchor="middle" font-size="13" fill="#1b5e20">SQLAlchemy · Swagger (/docs)</text>
+  <text x="670" y="276" text-anchor="middle" font-size="13" fill="#1b5e20">Regras: pace, recordes,</text>
+  <text x="670" y="296" text-anchor="middle" font-size="13" fill="#1b5e20">metas e melhor horário</text>
+  <text x="670" y="330" text-anchor="middle" font-size="12" fill="#2e7d32">container python · porta 8000</text>
+
+  <!-- sqlite -->
+  <path d="M600,410 a70,14 0 0,0 140,0 v58 a70,14 0 0,1 -140,0 z" fill="#ede7f6" stroke="#5e35b1" stroke-width="2"/>
+  <ellipse cx="670" cy="410" rx="70" ry="14" fill="#d1c4e9" stroke="#5e35b1" stroke-width="2"/>
+  <text x="670" y="448" text-anchor="middle" font-size="15" font-weight="700" fill="#311b92">SQLite</text>
+  <text x="670" y="466" text-anchor="middle" font-size="12" fill="#4527a0">locais · treinos · meta</text>
+
+  <!-- open-meteo -->
+  <rect x="850" y="150" width="170" height="216" rx="12" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="935" y="178" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">Open-Meteo</text>
+  <text x="935" y="198" text-anchor="middle" font-size="12" fill="#1565c0">serviço externo</text>
+  <text x="935" y="216" text-anchor="middle" font-size="12" fill="#1565c0">gratuito · CC BY 4.0</text>
+  <rect x="866" y="232" width="138" height="34" rx="6" fill="#ffffff" stroke="#90caf9"/>
+  <text x="935" y="254" text-anchor="middle" font-size="13" fill="#0d47a1">Geocoding</text>
+  <rect x="866" y="274" width="138" height="34" rx="6" fill="#ffffff" stroke="#90caf9"/>
+  <text x="935" y="296" text-anchor="middle" font-size="13" fill="#0d47a1">Forecast (hora a hora)</text>
+  <rect x="866" y="316" width="138" height="34" rx="6" fill="#ffffff" stroke="#90caf9"/>
+  <text x="935" y="338" text-anchor="middle" font-size="13" fill="#0d47a1">Air Quality (AQI)</text>
+
+  <!-- setas -->
+  <line x1="164" y1="258" x2="226" y2="258" stroke="#37474f" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="195" y="248" text-anchor="middle" font-size="12" fill="#37474f">HTTP</text>
+
+  <line x1="452" y1="244" x2="556" y2="244" stroke="#37474f" stroke-width="2.5" marker-end="url(#seta)"/>
+  <line x1="556" y1="272" x2="452" y2="272" stroke="#37474f" stroke-width="2.5" marker-end="url(#seta)"/>
+  <text x="504" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#37474f">REST / JSON</text>
+  <text x="504" y="292" text-anchor="middle" font-size="11" fill="#37474f">GET · POST</text>
+  <text x="504" y="306" text-anchor="middle" font-size="11" fill="#37474f">PUT · DELETE</text>
+
+  <line x1="782" y1="258" x2="846" y2="258" stroke="#37474f" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="825" y="238" text-anchor="middle" font-size="12" fill="#37474f">HTTPS</text>
+  <text x="825" y="252" text-anchor="middle" font-size="12" fill="#37474f">REST</text>
+
+  <line x1="670" y1="358" x2="670" y2="392" stroke="#37474f" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="680" y="382" font-size="12" fill="#37474f">SQLAlchemy</text>
+
+  <!-- legenda -->
+  <text x="230" y="400" font-size="13" font-weight="700" fill="#263238">Fluxo de uma recomendação:</text>
+  <text x="230" y="422" font-size="12.5" fill="#37474f">1. O front chama GET /locais/{id}/melhor-horario</text>
+  <text x="230" y="442" font-size="12.5" fill="#37474f">2. A API busca a coordenada do local no SQLite</text>
+  <text x="230" y="462" font-size="12.5" fill="#37474f">3. A API consulta Forecast e Air Quality</text>
+  <text x="230" y="482" font-size="12.5" fill="#37474f">4. A API calcula a nota de cada hora e</text>
+  <text x="230" y="500" font-size="12.5" fill="#37474f">    devolve a janela ideal e os alertas</text>
+</svg>

@@ -1,0 +1,4 @@
+# Mantém fim de linha LF (padrão Linux), necessário para os containers Docker
+* text=auto eol=lf
+*.svg text eol=lf
+*.png binary
