@@ -3,3 +3,7 @@ dist/
 .env
 .env.local
 *.log
+
+# Ajustes locais desta máquina (certificado do antivírus)
+docker-compose.override.yml
+.certificados-locais/

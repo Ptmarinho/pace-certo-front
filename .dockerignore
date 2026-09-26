@@ -6,3 +6,5 @@ docs
 .env
 .env.local
 docker-compose.yml
+.certificados-locais
+docker-compose.override.yml
